@@ -15,3 +15,6 @@ const userEduardo = {
     id: 776
 };
 showUser(userEduardo);
+const edu = { name: 'edu', age: 19 };
+// type PersonType = { age: string }
+const vivi = { name: 'Vivi' };

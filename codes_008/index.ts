@@ -33,3 +33,17 @@ const userEduardo: User = {
 
 showUser(userEduardo)
 
+
+// Interface X alias
+/* Diferença: A interface pode ser modificada, já o alias não. */
+//Interface
+interface Person { name: string }
+interface Person { age: number }
+
+const edu: Person = {name: 'edu', age: 19}
+
+//Alias
+type PersonType = { name: string }
+// type PersonType = { age: string }
+
+const vivi: PersonType = {name: 'Vivi'}
