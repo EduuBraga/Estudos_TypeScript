@@ -64,6 +64,35 @@ console.log(fusca)
 interface Dog { [index: string]: string, name: string }
 
 const tobby: Dog = { name: 'Tobby', race: 'poodle' }
-const luna: Dog = {name: 'luna'}
+const luna: Dog = { name: 'luna' }
 
 console.log(tobby, luna)
+
+// - Herança de interfaces
+interface Human { name: string, age: number }
+interface SuperHuman extends Human { superPowers: string[] }
+
+const eduardo: Human = { name: 'Eduardo Braga', age: 19 }
+
+const superMan: SuperHuman = {
+  name: 'Clark',
+  age: 38,
+  superPowers: ['super-força', 'velocidade', 'raio-laser']
+}
+
+console.log(superMan)
+console.log(superMan.superPowers)
+
+// - intersection Types
+interface Character { name: string }
+interface Gun { gun: string, type: string}
+
+type HumanWithGun = Character & Gun
+
+const zoro: HumanWithGun = {
+  name: 'zoro',
+  gun: 'katana',
+  type: 'sword'
+}
+
+console.log(zoro)

@@ -32,3 +32,17 @@ console.log(fusca);
 const tobby = { name: 'Tobby', race: 'poodle' };
 const luna = { name: 'luna' };
 console.log(tobby, luna);
+const eduardo = { name: 'Eduardo Braga', age: 19 };
+const superMan = {
+    name: 'Clark',
+    age: 38,
+    superPowers: ['super-força', 'velocidade', 'raio-laser']
+};
+console.log(superMan);
+console.log(superMan.superPowers);
+const zoro = {
+    name: 'zoro',
+    gun: 'katana',
+    type: 'sword'
+};
+console.log(zoro);
