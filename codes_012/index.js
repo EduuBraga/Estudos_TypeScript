@@ -27,3 +27,8 @@ const u1 = { email: 'dudu@email.com', password: '123', role: 'admin' };
 const u2 = { email: 'vivi@email.com', password: '456' };
 showUserEmail(u1);
 showUserEmail(u2);
+const fusca = { brand: 'VW', whells: 4 };
+console.log(fusca);
+const tobby = { name: 'Tobby', race: 'poodle' };
+const luna = { name: 'luna' };
+console.log(tobby, luna);
