@@ -111,3 +111,29 @@ console.log(onix.brandCar)
 onix.newWhells = 6
 
 console.log(onix)
+
+
+// - implements
+interface Pets {
+  name: string,
+  age: number,
+  showDetails(): string
+}
+
+class Pet implements Pets {
+  name
+  age
+
+  constructor(name: string, age: number){
+    this.name = name
+    this.age = age
+  }
+
+  showDetails(): string {
+    return `O seu nome é ${this.name} e você tem ${this.age} anos.`
+  }
+}
+
+const tobby = new Pet('tobby', 9)
+
+console.log(tobby.showDetails())

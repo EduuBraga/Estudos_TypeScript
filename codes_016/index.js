@@ -69,3 +69,14 @@ onix.showDetailsCar();
 console.log(onix.brandCar);
 onix.newWhells = 6;
 console.log(onix);
+class Pet {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    showDetails() {
+        return `O seu nome é ${this.name} e você tem ${this.age} anos.`;
+    }
+}
+const tobby = new Pet('tobby', 9);
+console.log(tobby.showDetails());
