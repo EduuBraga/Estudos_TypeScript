@@ -46,3 +46,28 @@ const zoro = {
     type: 'sword'
 };
 console.log(zoro);
+// - ReadonlyArray
+let pets = [
+    'lola',
+    'luna',
+    'lua',
+    'tobby',
+    'tata',
+    'leo',
+    'paçoca',
+    'piriquito',
+    'nami'
+];
+// pets.forEach((pet, index) => {
+//   const maleOrFamale = pet.lastIndexOf('a') + 1  === pet.length 
+//   console.log(`${pet} foi o ${++index}° a ser ${maleOrFamale ? 'adotada' : 'adotado'}`)
+// })
+pets = pets.map((pet, index) => `${pet} foi o ${++index} a ser adotado`);
+console.log(pets);
+const myFiveNumbers = [1, 2, 3, 4, 5];
+const user1 = ['Eduardo', 19];
+user1[0] = 'Dudu';
+user1[1] = 31;
+// user[2] = 'olá' //ERRO
+// user[0] = 19 //ERRO
+// user[1] = 'teste' //ERRO

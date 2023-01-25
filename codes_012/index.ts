@@ -96,3 +96,46 @@ const zoro: HumanWithGun = {
 }
 
 console.log(zoro)
+
+
+// - ReadonlyArray
+let pets: ReadonlyArray<string> = [
+  'lola', 
+  'luna', 
+  'lua', 
+  'tobby', 
+  'tata', 
+  'leo', 
+  'paçoca', 
+  'piriquito', 
+  'nami'
+]
+
+// pets.forEach((pet, index) => {
+//   const maleOrFamale = pet.lastIndexOf('a') + 1  === pet.length 
+
+//   console.log(`${pet} foi o ${++index}° a ser ${maleOrFamale ? 'adotada' : 'adotado'}`)
+// })
+
+pets = pets.map((pet, index) => `${pet} foi o ${++index} a ser adotado`) 
+
+console.log(pets)
+
+
+// - Tuplas
+type fiveNumbers = [number, number, number, number, number]
+
+const myFiveNumbers: fiveNumbers = [1, 2, 3, 4, 5]
+// const myFiveNumbers2: fiveNumbers = [1, 2, 3, 4, 5, 6] //ERRO
+// const myFiveNumbers3: fiveNumbers = [1, true, undefined, [], 'Hello'] //ERRO
+
+type nameAndAge = [string, number]
+
+const user1: nameAndAge = ['Eduardo', 19]
+
+user1[0] = 'Dudu'
+user1[1] = 31
+
+// user[2] = 'olá' //ERRO
+// user[0] = 19 //ERRO
+// user[1] = 'teste' //ERRO
