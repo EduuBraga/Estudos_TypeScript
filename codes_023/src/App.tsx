@@ -3,6 +3,8 @@ import { Header } from './components/header';
 import { Post } from './components/post';
 import { ChangeState } from './components/State';
 
+import { Role } from './components/post';
+
 function App() {
   return (
     <div className="App">
@@ -13,12 +15,14 @@ function App() {
         content='sou programador'
         qtyLinks={1020}
         tags={['programador', 'dev', 'emprego']}
+        role={Role.user}
       />
       <Post
         title='Olá pessoas'
         content='Pois bem...'
         qtyLinks={604}
         tags={['vida', 'oportunidade', 'work']}
+        role={Role.admin}
       />
 
       <ChangeState />

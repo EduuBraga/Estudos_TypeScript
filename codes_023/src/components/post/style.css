@@ -6,7 +6,15 @@
 .post{
   background-color: #404040;
   color: #f4f4f4;
-  max-width: 300px;
+  max-width: 450px;
   margin: 12px;
   padding: 12px;
+}
+
+.post h2{
+  margin-bottom: 12px;
+}
+
+.post p{
+  margin-bottom: 4px;
 }
