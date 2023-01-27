@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './components/header';
 import { Post } from './components/post';
+import { ChangeState } from './components/State';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         qtyLinks={604}
         tags={['vida', 'oportunidade', 'work']}
       />
+
+      <ChangeState />
     </div>
   );
 }

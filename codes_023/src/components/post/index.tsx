@@ -17,8 +17,8 @@ export const Post = (
       <p className='post-content'>{content}</p>
       <p className='post-links'>{qtyLinks}</p>
       <div className='post-tags'>
-        {tags.map(tag =>
-          <span>#{tag} </span>
+        {tags.map((tag, index) =>
+          <span key={index}>#{tag} </span>
         )}
       </div>
     </div>
