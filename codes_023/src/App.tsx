@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Header } from './components/header';
 import { Post } from './components/post';
 import { ChangeState } from './components/State';
 
 import { Role } from './components/post';
 
+
 function App() {
+
   return (
     <div className="App">
       <Header />
@@ -26,6 +28,7 @@ function App() {
       />
 
       <ChangeState />
+
     </div>
   );
 }
